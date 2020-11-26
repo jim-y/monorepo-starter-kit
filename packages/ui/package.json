@@ -1,0 +1,29 @@
+{
+  "name": "@org/ui",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "yarn eslint pages --ext ts,js,tsx,jsx"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
+  },
+  "dependencies": {
+    "@org/components": "^1.0.0",
+    "@org/types": "^1.0.0",
+    "@org/utils": "^1.0.0",
+    "@zeit/next-sass": "^1.0.1",
+    "bulma": "^0.9.1",
+    "next": "10.0.3",
+    "next-transpile-modules": "^5.0.0",
+    "node-sass": "^5.0.0",
+    "react": "17.0.1",
+    "react-dom": "17.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.0"
+  }
+}

@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "author": "Attila Kling",
   "license": "MIT",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "src/index.ts",
+  "module": "src/index.ts",
   "scripts": {
-    "clean": "scripty",
-    "lint": "scripty",
-    "build": "scripty"
+    "lint": "scripty"
   },
   "scripty": {
     "path": "../../scripts/packages"
+  },
+  "dependencies": {
+    "react": "17.0.1"
   },
   "devDependencies": {
     "typescript": "^4.1.2"
