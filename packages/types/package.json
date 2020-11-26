@@ -1,0 +1,19 @@
+{
+  "name": "@org/types",
+  "version": "1.0.0",
+  "author": "Attila Kling",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "clean": "scripty",
+    "lint": "scripty",
+    "build": "scripty"
+  },
+  "scripty": {
+    "path": "../../scripts/packages"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.2"
+  }
+}

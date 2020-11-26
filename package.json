@@ -1,0 +1,39 @@
+{
+  "name": "monorepo-starter-kit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jim-y/monorepo-starter-kit.git",
+  "author": "Attila Kling <attila.kling@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "scripty",
+    "clean": "scripty",
+    "lint": "scripty"
+  },
+  "scripty": {
+    "path": "./scripts/workspace"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.8.1",
+    "@typescript-eslint/parser": "^4.8.1",
+    "eslint": "^7.14.0",
+    "husky": ">=4",
+    "lerna": "^3.22.1",
+    "lint-staged": ">=10",
+    "prettier": "2.2.0",
+    "rimraf": "^3.0.2",
+    "scripty": "^2.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,jsx,tsx,css,md,json}": "prettier --write"
+  }
+}
